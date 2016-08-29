@@ -13,19 +13,18 @@
   "author": "sirCamp",
   "license": "GPL-2.0",
   "homepage": "https://bitbucket.org/sirCamp/sysdig-assignment#readme",
-  "devDependencies": {
-
-  },
+  "devDependencies": {},
   "dependencies": {
+    "connect": "~3.4.1",
+    "datatables.net": "^1.10.12",
+    "datatables.net-dt": "^1.10.12",
+    "font-awesome": "^4.6.3",
     "gulp-develop-server": "^0.5.2",
+    "gulp-exec": "^2.1.2",
     "gulp-minify-css": "^1.2.4",
     "gulp-minify-html": "^1.0.6",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^2.0.0",
-    "connect": "~3.4.1",
-    "datatables.net": "^1.10.12",
-    "datatables.net-dt": "^1.10.12",
-    "gulp-exec": "^2.1.2",
     "jquery": "^3.1.0",
     "materialize-css": "^0.97.7",
     "serve-static": "~1.10.2"
