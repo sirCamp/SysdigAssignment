@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="node_modules/datatables.net-dt/css/jquery.dataTables.css"  />
+    <link type="text/css" rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"  />
+    <link type="text/css" rel="stylesheet" href="assets/css/main.min.css"/>
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Events shower</title>
+</head>
+
+<body>
+
+<nav class="blue lighten-1">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo center"><span class="fa fa-tags"></span> Event shower</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+
+        </ul>
+    </div>
+</nav>
+
+<main>
+
+    <div class="container">
+
+        <div class="row card-panel panel-margin">
+            <div class="col s12">
+
+                <h4>How It Works</h4>
+                <p>
+                    <ul>
+                        <li>The table will automatically refresh every 30 seconds</li>
+                        <li>The is pre-ordered by the <i>"Id"</i> column, but you could choose your preferred order by using the arrows</li>
+                        <li>On the table are displayed most relevant information</li>
+                        <li>By clicking on the "eye" a modal, with all event's detail, will appear</li>
+                        <li>By passing the mouse over the "ellipses" of the descriptions a tooltip with the whole description will appear</li>
+                        <li>By using the "Search" input you will filter the table on your query string ex 1:<i> "host.mac=0a:77:0e:13:2b:37"</i>, ex 2:<i> "docker"</i>.</li>
+                        <li>By using the "Show" select you will see more or less table rows</li>
+                        <li>By using the arrows near the columns title you will order ASC or DESC all the table</li>
+                    <ul>
+
+                </p>
+
+            </div>
+            <hr>
+            <div class="col s12">
+                <table id="events" class="striped highlight responsive-table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Severity</th>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Tags</th>
+                            <th>Actions</th>
+                            <th class="hide">Filter</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Modal Structure -->
+<div id="modal" class="modal modal-fixed-footer">
+    <div class="modal-content">
+        <h4>Event <span id="event-name_id"></span></h4>
+        <hr>
+        <br>
+
+        <div id="event-content">
+            <div class="row">
+                <div class="col s12">
+
+                    <div class="row">
+
+                        <div id="event-name" class="col s12 m6 l6">
+
+                        </div>
+                        <div id="event-filter" class="col s12 m6 l6">
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="col s12">
+                    <div class="row">
+                        <div  id="event-header_times_and_version" class="col s12 m6 l6">
+
+                        </div>
+                        <div  id="event-header_tags" class="col s12 m6 l6">
+
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="col s12">
+
+                    <div class="row">
+
+                        <div id="event-description" class="col s12">
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+    </div>
+</div>
+
+<footer class="page-footer blue lighten-1">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Power by sirCamp</h5>
+            </div>
+            <div class="col l4 offset-l2 s12">
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            &copy; 2016 Copyright Text
+
+        </div>
+    </div>
+</footer>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+<script type="text/javascript" src="node_modules/datatables.net/js/jquery.dataTables.js"></script>
+
+<script type="text/javascript" src="assets/javascript/main.min.js"></script>
+</body>
+</html>
